@@ -14,28 +14,16 @@
     </div>
     <form @submit.prevent="">
       <div class="card-body">
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-sm-4">
-            <label class="form-label">Full name</label>
+            <label class="form-label">Role name</label>{{ roleName }}
             <div class="input-group input-group-sm">
-              <span class="input-group-text"
-                ><i class="fas fa-user-tag"></i
-              ></span>
-              <input type="text" class="form-control" placeholder="Full name" />
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <label class="form-label">Full name</label>
-            <div class="input-group input-group-sm">
-              <span class="input-group-text">@</span>
-              <input type="text" class="form-control" placeholder="Full name" />
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <label class="form-label">Full name</label>
-            <div class="input-group input-group-sm">
-              <span class="input-group-text">@</span>
-              <input type="text" class="form-control" placeholder="Full name" />
+              <span class="input-group-text"><i class="fas fa-mask"></i></span>
+              <input
+                type="text"
+                class="form-control text-capitalize"
+                placeholder="Role name"
+                v-model="roleName">
             </div>
           </div>
         </div>
@@ -43,7 +31,20 @@
       <div class="card-footer text-center">
         <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
       </div>
-      
     </form>
   </div>
 </template>
+<script>
+export default {
+    data(){
+        return{
+            roleName: null
+        }
+    }
+}
+</script>
+<style scoped>
+::placeholder{
+    text-transform: capitalize;
+}
+</style>
