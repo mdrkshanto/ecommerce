@@ -33721,7 +33721,17 @@ var render = function () {
       ),
     ]),
     _vm._v(" "),
-    _vm._m(0),
+    _c(
+      "form",
+      {
+        on: {
+          submit: function ($event) {
+            $event.preventDefault()
+          },
+        },
+      },
+      [_vm._m(0), _vm._v(" "), _vm._m(1)]
+    ),
   ])
 }
 var staticRenderFns = [
@@ -33729,53 +33739,61 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("form", [
-      _c("div", { staticClass: "card-body" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-sm-4" }, [
-            _c("label", { staticClass: "form-label" }, [_vm._v("Full name")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "input-group input-group-sm" }, [
-              _c("span", { staticClass: "input-group-text" }, [
-                _c("i", { staticClass: "fas fa-user-tag" }),
-              ]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Full name" },
-              }),
-            ]),
-          ]),
+    return _c("div", { staticClass: "card-body" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-sm-4" }, [
+          _c("label", { staticClass: "form-label" }, [_vm._v("Full name")]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-sm-4" }, [
-            _c("label", { staticClass: "form-label" }, [_vm._v("Full name")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "input-group input-group-sm" }, [
-              _c("span", { staticClass: "input-group-text" }, [_vm._v("@")]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Full name" },
-              }),
+          _c("div", { staticClass: "input-group input-group-sm" }, [
+            _c("span", { staticClass: "input-group-text" }, [
+              _c("i", { staticClass: "fas fa-user-tag" }),
             ]),
+            _vm._v(" "),
+            _c("input", {
+              staticClass: "form-control",
+              attrs: { type: "text", placeholder: "Full name" },
+            }),
           ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-sm-4" }, [
+          _c("label", { staticClass: "form-label" }, [_vm._v("Full name")]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-sm-4" }, [
-            _c("label", { staticClass: "form-label" }, [_vm._v("Full name")]),
+          _c("div", { staticClass: "input-group input-group-sm" }, [
+            _c("span", { staticClass: "input-group-text" }, [_vm._v("@")]),
             _vm._v(" "),
-            _c("div", { staticClass: "input-group input-group-sm" }, [
-              _c("span", { staticClass: "input-group-text" }, [_vm._v("@")]),
-              _vm._v(" "),
-              _c("input", {
-                staticClass: "form-control",
-                attrs: { type: "text", placeholder: "Full name" },
-              }),
-            ]),
+            _c("input", {
+              staticClass: "form-control",
+              attrs: { type: "text", placeholder: "Full name" },
+            }),
+          ]),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-sm-4" }, [
+          _c("label", { staticClass: "form-label" }, [_vm._v("Full name")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "input-group input-group-sm" }, [
+            _c("span", { staticClass: "input-group-text" }, [_vm._v("@")]),
+            _vm._v(" "),
+            _c("input", {
+              staticClass: "form-control",
+              attrs: { type: "text", placeholder: "Full name" },
+            }),
           ]),
         ]),
       ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-footer" }, [_vm._v("asdfasdf")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-footer text-center" }, [
+      _c(
+        "button",
+        { staticClass: "btn btn-secondary btn-sm", attrs: { type: "submit" } },
+        [_vm._v("Submit")]
+      ),
     ])
   },
 ]

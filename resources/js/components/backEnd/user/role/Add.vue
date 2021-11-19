@@ -12,13 +12,15 @@
         ></router-link>
       </div>
     </div>
-    <form>
+    <form @submit.prevent="">
       <div class="card-body">
         <div class="row">
           <div class="col-sm-4">
             <label class="form-label">Full name</label>
             <div class="input-group input-group-sm">
-              <span class="input-group-text"><i class="fas fa-user-tag"></i></span>
+              <span class="input-group-text"
+                ><i class="fas fa-user-tag"></i
+              ></span>
               <input type="text" class="form-control" placeholder="Full name" />
             </div>
           </div>
@@ -38,7 +40,9 @@
           </div>
         </div>
       </div>
-      <div class="card-footer">asdfasdf</div>
+      <div class="card-footer text-center">
+        <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
+      </div>
     </form>
   </div>
 </template>
