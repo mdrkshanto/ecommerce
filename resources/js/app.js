@@ -1,6 +1,6 @@
 require("./bootstrap");
 
-Vue.component("app-comp", require("./components/backEnd/mastering/Master.vue").default);
+Vue.component("app", require("./components/backEnd/mastering/Master.vue").default);
 
 import VueRouter from "vue-router";
 Vue.use(VueRouter);

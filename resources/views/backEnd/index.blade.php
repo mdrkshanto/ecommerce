@@ -10,7 +10,7 @@
 
 <body class="hold-transition sidebar-mini">
     <div id="app">
-        <app-comp />
+        <App />
     </div>
 </body>
 <script src="{{ asset('js/app.js') }}"></script>
